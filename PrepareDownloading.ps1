@@ -1,6 +1,6 @@
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [System.Net.SecurityProtocolType]::Tls12
 
-$DownloadURL = "https://raw.githubusercontent.com/npquyngoc/Internet_Download_Manager_Activation_Script/main/IDM_Activation_Script.cmd"
+$DownloadURL = "https://raw.githubusercontent.com/npquyngoc/Internet_Download_Manager_Activation_Script/main/IAS.cmd"
 $FilePath = "$env:TEMP\TEMP_IAS.cmd"
 
 try {
