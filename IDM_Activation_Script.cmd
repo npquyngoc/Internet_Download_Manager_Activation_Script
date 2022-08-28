@@ -153,7 +153,7 @@ if defined activate goto _activate
 :MainMenu
 
 cls
-title  IDM Activation Script 0.7 - @ModByPiash
+title Internet Download Manager Activation Script - 0.7.0.0
 mode 65, 25
 
 :: Check firewall status
@@ -421,7 +421,7 @@ echo:
 echo Applying registration details...
 echo:
 
-If not defined name set name=Piash
+If not defined name set name=npquyngoc
 
 set "reg=HKCU\SOFTWARE\DownloadManager /v FName /t REG_SZ /d "%name%"" & call :_rcont
 set "reg=HKCU\SOFTWARE\DownloadManager /v LName /t REG_SZ /d """ & call :_rcont
