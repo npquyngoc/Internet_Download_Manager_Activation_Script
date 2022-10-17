@@ -2,6 +2,7 @@
 
 $DownloadURL = "https://raw.githubusercontent.com/npquyngoc/Internet_Download_Manager_Activation_Script/main/IAS_Offline.cmd"
 $FilePath = "$env:temp\Temp_IAS_Offline.cmd"
+$FileItem = Get-Item -LiteralPath $FilePath
 
 try
 {
@@ -10,11 +11,12 @@ try
 
 catch
 {
-    Write-Error $_ return
+    Write-Error $_
+    return
 }
 
 if (Test-Path $FilePath)
 {
     Start-Process $FilePath -Wait
-    (Get-Item -LiteralPath $FilePath).Delete()
+    $FileItem.Delete()
 }
