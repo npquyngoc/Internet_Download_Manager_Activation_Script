@@ -17,7 +17,5 @@ catch
 if (Test-Path $FilePath)
 {
     Start-Process $FilePath -Wait
-
-    $FileItem = Get-Item -LiteralPath $FilePath
-    $FileItem.Delete()
+    [Get-Item -LiteralPath $FilePath].Delete()
 }
